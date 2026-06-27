@@ -104,9 +104,9 @@ java -jar target/flight-tracker.jar input.xml output.xml
   "specialists": [
     {
       "id": "SP001",
-      "firstName": "Иван",
-      "lastName": "Иванов",
-      "position": "Капитан"
+      "firstName": "Ivan",
+      "lastName": "Ivanov",
+      "position": "Captain"
     }
   ],
   "flights": [
@@ -130,9 +130,9 @@ java -jar target/flight-tracker.jar input.xml output.xml
     <specialists>
         <specialist>
             <id>SP001</id>
-            <firstName>Иван</firstName>
-            <lastName>Иванов</lastName>
-            <position>Капитан</position>
+            <firstName>Ivan</firstName>
+            <lastName>Ivanov</lastName>
+            <position>Captain</position>
         </specialist>
     </specialists>
     <flights>
