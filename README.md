@@ -102,3 +102,58 @@ java -jar target/flight-tracker.jar input.json output.json
 ```bash
 java -jar target/flight-tracker.jar input.xml output.xml
 ```
+---
+
+## Форматы файлов
+### Входной JSON:
+```json
+{
+  "specialists": [
+    {
+      "id": "SP001",
+      "firstName": "Иван",
+      "lastName": "Иванов",
+      "position": "Капитан"
+    }
+  ],
+  "flights": [
+    {
+      "aircraftType": "Boeing 737",
+      "aircraftNumber": "VP-BXX",
+      "departureTime": "2020-12-15T08:30:00",
+      "arrivalTime": "2020-12-15T12:45:00",
+      "departureAirport": "SVO",
+      "arrivalAirport": "LED",
+      "crewIds": ["SP001"]
+    }
+  ]
+}
+```
+
+### Входной XML:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<FlightTrack>
+    <specialists>
+        <specialist>
+            <id>SP001</id>
+            <firstName>Иван</firstName>
+            <lastName>Иванов</lastName>
+            <position>Капитан</position>
+        </specialist>
+    </specialists>
+    <flights>
+        <flight>
+            <aircraftType>Boeing 737</aircraftType>
+            <aircraftNumber>VP-BXX</aircraftNumber>
+            <departureTime>2020-12-15T08:30:00</departureTime>
+            <arrivalTime>2020-12-15T12:45:00</arrivalTime>
+            <departureAirport>SVO</departureAirport>
+            <arrivalAirport>LED</arrivalAirport>
+            <crew>
+                <crewId>SP001</crewId>
+            </crew>
+        </flight>
+    </flights>
+</FlightTrack>
+```
